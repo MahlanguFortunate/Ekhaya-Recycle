@@ -1,13 +1,16 @@
-FROM payara/micro:6.2024.6-jdk17
+FROM payara/server-full:5.2022.5
 
-# The default DEPLOY_DIR is already set, but we'll be explicit
-ENV DEPLOY_DIR=/opt/payara/deployments
+# Add MySQL JDBC driver
+COPY mysql-connector-java-8.0.33.jar /opt/payara/appserver/glassfish/domains/production/lib/
 
-# Copy your WAR file
-COPY EhkayaRecycleWebApplication/dist/*.war $DEPLOY_DIR/
+# Copy WAR to autodeploy
+COPY EhkayaRecycleWebApplication.war /opt/payara/appserver/glassfish/domains/production/autodeploy/
 
-# Expose the port
+# Copy startup script and make executable
+COPY startup.sh /startup.sh
+RUN chmod +x /startup.sh
+
+# GlassFish HTTP port
 EXPOSE 8080
 
-# 🔑 KEY FIX: Do NOT specify CMD - let the image use its default
-# The Payara Micro image auto-deploys everything in DEPLOY_DIR
+CMD ["/startup.sh"]
