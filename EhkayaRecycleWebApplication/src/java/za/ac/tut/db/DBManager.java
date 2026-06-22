@@ -11,7 +11,7 @@ public class DBManager
     private static final String DB_PORT = "3306";
     private static final String DB_NAME = "bjdjal9nknkxxzjy9utc";
     private static final String USER = "ugtyek4gezopdorz";
-    private static final String PASS = "kSxwmOueUTMKSTcLZl69";
+    private static final String PASS = "Xcvv4T4kiD0xT1E7ImPM";
     
     // JDBC URL with SSL disabled (or enabled - see notes below)
     private static final String URL = "jdbc:mysql://" + DB_IP + ":" + DB_PORT + "/" + DB_NAME + 
