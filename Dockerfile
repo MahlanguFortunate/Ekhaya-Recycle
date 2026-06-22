@@ -4,10 +4,12 @@ USER root
 
 ENV DEPLOY_DIR=/opt/payara/deployments
 
-COPY EhkayaRecycleWebApplication/dist/EhkayaRecycleWebApplication.war $DEPLOY_DIR/EhkayaRecycleWebApplication.war
+ARG CACHEBUST=3
 
-RUN ls -la $DEPLOY_DIR
+COPY EhkayaRecycleWebApplication/dist/EhkayaRecycleWebApplication.war $DEPLOY_DIR/EhkayaRecycleWebApplication.war
 
 USER payara
 
 EXPOSE 8080
+
+CMD ["--deploy", "/opt/payara/deployments/EhkayaRecycleWebApplication.war", "--port", "8080", "--noCluster"]
