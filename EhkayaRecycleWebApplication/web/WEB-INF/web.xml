@@ -2,7 +2,7 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <context-param>
         <param-name>mapbox.access.token</param-name>
-        <param-value>pk.eyJ1IjoiZm9ydHVuYXRlLTUiLCJhIjoiY21wcGluaGY0MGV1eTJxcjVlcXE5aGxzaCJ9.Jy9wmq_ag2PU2gbI8MxJbw</param-value>
+        <param-value>YOUR_MAPBOX_API_KEY</param-value>
     </context-param>
     <listener>
         <listener-class>za.ac.tut.web.MapboxConfigListener</listener-class>
