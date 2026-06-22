@@ -6,5 +6,5 @@ COPY EhkayaRecycleWebApplication/dist/*.war $DEPLOY_DIR/
 
 EXPOSE 8080
 
-# ✅ Correct: Payara Micro auto-deploys WARs in the deployments folder
-CMD ["payara-micro"]
+# ✅ Correct: This is the proper way to start Payara Micro with your WAR
+CMD ["java", "-jar", "/opt/payara/payara-micro.jar", "--deploydir", "/opt/payara/deployments"]
