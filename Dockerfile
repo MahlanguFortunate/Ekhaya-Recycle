@@ -1,5 +1,5 @@
 # Stage 1: Build the WAR file using Ant
-FROM openjdk:17-jdk-slim AS build
+FROM eclipse-temurin:17-jdk AS build
 
 # Install Ant
 RUN apt-get update && \
