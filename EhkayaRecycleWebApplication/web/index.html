@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycle Ekhaya Home Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+
+   
+  <link rel="stylesheet" href="styling/landingPagecss.css">
+    <!--
+
+
+
+-->
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="recycling-nav">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Recycle Ekhaya</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section 1: Home / Hero -->
+    <section id="home" class="parallax-section">
+        <div class="parallax-bg" data-speed="0.5" style="background-image: url('images/image-bg-01.jpg')"></div>
+        <div class="parallax-overlay"></div>
+        <div class="section-content">
+            <h1 class="section-title hero-title">WELCOME TO RECYCLE EKHAYA</h1>
+            <p class="section-subtitle caps">WE BRING RECYCLING CLOSER TO HOME</p>
+            <a href="login.html" class="btn-scroll">LOG IN</a>
+        </div>
+    </section>
+
+    <!-- Section 2: About -->
+    <section id="about" class="parallax-section">
+        <div class="parallax-bg" data-speed="0.45" style="background-image: url('images/image-bg-07.jpg')"></div>
+        <div class="parallax-overlay"></div>
+        <div class="section-content">
+            <h2 class="section-title">ABOUT US</h2>
+            <div class="about-cols">
+                <div class="about-col">
+                    <div class="about-thumb thumb-top-left">
+                        <img src="images/image-bg-03.jpg" alt="Our Team">
+                    </div>
+                    <p>A development team focused on building practical technology solutions for everyday challenges. The approach combines user-centred design with efficient system development to create reliable and accessible applications. Each solution begins with understanding community needs, followed by purposeful development that supports sustainability and long-term impact. </p>
+                </div>
+                <div class="about-col">
+                    <div class="about-thumb-wide">
+                        <img src="images/image-bg-04.jpg" alt="Our Process">
+                    </div>
+                    <p><b>Our Approach</b> aims the platform connects households with nearby recycling centres through a structured pickup scheduling system. Users create profiles, request collections, and prepare recyclable materials for collection. During pickup, materials are weighed on-site and the recorded information is captured within the system for transparency and tracking.</p>
+                    <p>After processing at the recycling centre, the calculated value is credited to a digital wallet linked to the user profile. Recycling data is continuously analysed to provide insights into individual and community contributions, promoting awareness and encouraging sustainable recycling habits.</p>
+                </div>
+            </div>
+            <p class="unsplash-credit">Images courtesy of <a href="https://unsplash.com" target="_blank">Unsplash</a></p>
+        </div>
+    </section>
+
+    <!-- Section 3: Services -->
+    <section id="services" class="parallax-section">
+        <div class="parallax-bg" data-speed="0.55" style="background-image: url('images/image-bg-08.jpg')"></div>
+        <div class="parallax-overlay overlay-dark"></div>
+        <div class="section-content">
+            <h2 class="section-title">WHAT WE DO</h2>
+            <p class="section-subtitle caps">BRING &middot; RECYCLING &middot; HOME</p>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="4" y="4" width="32" height="32" rx="2" stroke="white" stroke-width="1.5"/>
+                            <line x1="4" y1="14" x2="36" y2="14" stroke="white" stroke-width="1.5"/>
+                            <circle cx="10" cy="9" r="2" fill="white"/>
+                            <circle cx="16" cy="9" r="2" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3>SMART RECYCLING</h3>
+                    <p class="caps">CONNECT HOMES WITH RECYCLING CENTRES</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 4L36 12V28L20 36L4 28V12L20 4Z" stroke="white" stroke-width="1.5"/>
+                            <path d="M20 36V20" stroke="white" stroke-width="1.5"/>
+                            <path d="M36 12L20 20" stroke="white" stroke-width="1.5"/>
+                            <path d="M4 12L20 20" stroke="white" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3>REWARD SYSTEM</h3>
+                    <p class="caps">EARN MONEY FOR RECYCLED MATERIALS</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="8" y="2" width="24" height="36" rx="3" stroke="white" stroke-width="1.5"/>
+                            <line x1="8" y1="8" x2="32" y2="8" stroke="white" stroke-width="1.5"/>
+                            <line x1="8" y1="32" x2="32" y2="32" stroke="white" stroke-width="1.5"/>
+                            <circle cx="20" cy="35" r="1.5" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3>AI IMPACT ANALYTICS</h3>
+                    <p class="caps">TRACK ENVIRONMENTAL CONTRIBUTION BY AREA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Gallery -->
+    <section id="gallery" class="parallax-section">
+        <div class="parallax-bg" data-speed="0.5" style="background-image: url('images/image-bg-05.jpg')"></div>
+        <div class="parallax-overlay"></div>
+        <div class="section-content">
+            <h2 class="section-title">OUR WORK</h2>
+            <div class="content-block">
+                <p>Recycle Ekhaya reflects a commitment to sustainable innovation and community-driven impact. The platform simplifies household recycling while creating meaningful value through rewards and data insights. Each interaction contributes to smarter waste management and measurable environmental progress.</p>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label caps">PROJECTS COMPLETED</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">80+</span>
+                        <span class="stat-label caps">HAPPY CLIENTS</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label caps">YEARS OF EXPERIENCE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Contact -->
+    <section id="contact" class="parallax-section">
+        <div class="parallax-bg" data-speed="0.5" style="background-image: url('images/image-bg-06.jpg')"></div>
+        <div class="parallax-overlay overlay-medium"></div>
+        <div class="section-content">
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <p class="section-subtitle caps">LET'S START SOMETHING GREAT TOGETHER</p>
+            <div class="contact-form-wrap">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your name" required>
+                        <input type="email" placeholder="Your email" required>
+                    </div>
+                    <textarea placeholder="Your message" rows="5" required></textarea>
+                    <button type="submit" class="btn-submit">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="recycle-footer">
+        <p>Copyright &copy; 2026 Recycle Ekhaya</p>
+    </footer>
+    <script src="landing-pageJS.js"></script>
+</body>
+</html>
